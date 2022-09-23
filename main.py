@@ -34,4 +34,4 @@ def get_shop_list_by_dishes(dishes, person_count):
         for i in dishes:
             cook(i, person_count)
 
-get_shop_list_by_dishes(['Фахитос', 'Омлет'], 2)
+get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2)
