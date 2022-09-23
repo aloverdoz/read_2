@@ -24,7 +24,8 @@ def cook(dishes, person_count):
                 app = ''
                 app += str((ing['ingredient_name']) + ' ' + (str(int(ing['quantity']) * person_count)) + ' ' + (ing['measure']))
                 eat.append(app)
-    print(eat)
+    for i in eat:
+        print(i)
 
 def get_shop_list_by_dishes(dishes, person_count):
     if type(dishes) == str:
