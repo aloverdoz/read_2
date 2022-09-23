@@ -21,10 +21,8 @@ def cook(dishes, person_count):
     for name, ingr in cook_book.items():
         if name == dishes:
             for ing in ingr:
-                app = []
-                app.append(ing['ingredient_name'])
-                app.append(int(ing['quantity']) * person_count)
-                app.append(ing['measure'])
+                app = ''
+                app += str((ing['ingredient_name']) + ' ' + (str(int(ing['quantity']) * person_count)) + ' ' + (ing['measure']))
                 eat.append(app)
     print(eat)
 
@@ -35,5 +33,4 @@ def get_shop_list_by_dishes(dishes, person_count):
         for i in dishes:
             cook(i, person_count)
 
-
-get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2)
+get_shop_list_by_dishes(['Фахитос', 'Омлет'], 2)
