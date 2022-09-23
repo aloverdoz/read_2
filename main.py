@@ -32,6 +32,7 @@ def get_shop_list_by_dishes(dishes, person_count):
         cook(dishes, person_count)
     if type(dishes) == list:
         for i in dishes:
+            print()
             cook(i, person_count)
 
 get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2)
